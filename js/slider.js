@@ -21,7 +21,7 @@ if(slider1){
 /********LATESTE PRODUCTS******/
 
 if (slider2) {
-    new Glide("#glide_2", {
+    new Glide('#glide_2', {
         type:"carousel",
         startAt: 0,
         hoverpause: true,
