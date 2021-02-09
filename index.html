@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!------google font----->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!------favicon----->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!------glidejs carousel----->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+    <!------animate scroll----->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!------stile sheet----->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>The Phome Market</title>
+</head>
+<body>
+    <!------HEADER----->
+    <header class="header" id="header">
+        <!------NAVIGATION----->
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__hamburger">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </div>
+
+                    <div class="nav__logo">
+                        <a href="/" class="scroll-link">PHONE</a>
+                    </div>
+
+                    <div class="nav__menu ">
+                        <div class="menu__top">
+                            <spam class="nav__category">PHONE</spam>
+                            <a href="#" class="close__toggle">
+                                <svg>
+                                    <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#header" class="nav__link scroll-link">Home</a>
+                            </li>
+    
+                            <li class="nav__item">
+                                <a href="#category" class="nav__link scroll-link">Category</a>
+                            </li>
+    
+                            <li class="nav__item">
+                                <a href="#news" class="nav__link scroll-link">Blogs</a>
+                            </li>
+    
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link scroll-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="nav__icons">
+                        <a href="#" class="icon__item">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-user"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="icon__item">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-search"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="icon__item">
+                            <svg>
+                                <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                            </svg>
+                            <span id="cart__total">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!------hero area----->
+        <div class="hero">
+            <div class="glide" id="glide_1" >
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                       <div class="hero__center">
+                            <div class="hero__left">
+                                <span>New Inspiration 2021</span>
+                                <h1>PHONE MADE FOR YOU!</h1>
+                                <p>Trending from mobile and headphone style collection</p>
+                                <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                            </div>
+                            <div class="hero__right">
+                               <div class="hero__img-container">
+                                <img src="./images/banner_01.png" alt="" class="banner_01">
+                               </div> 
+                            </div>
+                       </div> 
+                    </li>  
+                    <li class="glide__slide">
+                        <div class="hero__center">
+                             <div class="hero__left">
+                                 <span>New Inspiration 2021</span>
+                                 <h1>PHONE MADE FOR YOU!</h1>
+                                 <p>Trending from mobile and headphone style collection</p>
+                                 <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                             </div>
+                             <div class="hero__right">
+                                <div class="hero__img-container">
+                                 <img src="./images/banner_02.png" alt="" class="banner_02">
+                                </div> 
+                             </div>
+                        </div> 
+                    </li>                   
+                  </ul>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>                 
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-arrow-left2" ></use>
+                        </svg>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <svg>
+                            <use xlink:href="./images/sprite.svg#icon-arrow-right2" ></use>
+                        </svg>
+                    </button>
+                </div>
+
+              </div>
+        </div>
+        <!------/hero area----->
+        <!------/NAVIGATION----->
+    </header>
+    <!------/HEADER----->
+
+    <!---main-->
+
+    <main id="main">
+        <section class="section collection" id="collection">
+            <div class="container">
+              <div class="collection__container">
+                  <div class="collection__box">
+                     <div class="img__container">
+                        <img src="./images/collection_02.png" alt="" class="collection_2"> 
+                     </div> 
+                     <div class="collection__content">
+                         <div class="collection__data">
+                            <span>New Color Introduced</span>
+                            <h1>HEADPHONE</h1>
+                            <a href="#">SHOP NOW</a>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="collection__box">
+                    <div class="img__container">
+                       <img src="./images/collection_01.png" alt="" class="collection_1"> 
+                    </div> 
+                    <div class="collection__content">
+                        <div class="collection__data">
+                           <span>Phone Device Preset</span>
+                           <h1>SMARTPHONES</h1>
+                           <a href="#">SHOP NOW</a>
+                        </div>
+                    </div>
+                 </div>
+              </div>  
+            </div>
+        </section>
+
+        <!--LATEST PRODUCTS-->
+        <section class="section latest__products" id="latest"> 
+            <div class="title__container">
+                <div class="section__title active" data-id="latest products">
+                    <span class="dot"></span>
+                    <h1 class="primary__title">Latest Producta</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="glide" id="glide_2">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slide glide__slideStyle latest-center">
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/iPhone/iphone6.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/headphone/headphone10.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/sumsung/samsung2.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/headphone/headphone4.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/sumsung/samsung5.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/headphone/headphone5.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/sumsung/samsung2.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product__header">
+                                        <img src="./images/products/iPhone/iphone2.jpeg" alt="iphone photo">
+                                    </div>
+                                    <div class="product__footer">
+                                        <h3>Apple iPhone</h3>
+                                        <div class="rating">
+                                         <svg>
+                                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                         </svg>
+                                         <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>
+                                          <svg>
+                                            <use xlink:href="./images/sprite.svg#icon-star-full"></use>                                          
+                                          </svg>                                        
+                                        </div>
+                                        <div class="product__price">
+                                            <h4>£750</h4>
+                                            <a href="#"><button type="button" class="product__btn">
+                                               Add To Cart 
+                                            </button></a>
+                                        </div>
+                                        <ul>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-eye"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-heart-o"></use>                                          
+                                                </svg>
+                                            </a>
+                                            <a href="#">
+                                                <svg>
+                                                <use xlink:href="./images/sprite.svg#icon-loop2"></use>                                          
+                                                </svg>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!---/main-->
+
+
+
+
+    <!------glidejs----->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <!------aos----->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!------script----->
+    <script src="./js/index.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/slider.js"></script>
+
+</body>
+</html>
