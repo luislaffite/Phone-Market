@@ -1,6 +1,4 @@
 /********GLIDE JS CAROUSEL******/
-// import Glide from "https://unpkg.com/@glidejs/glide@3.2.3/dist/glide.esm.js";
-
 
 const slider1 = document.getElementById('glide_1');
 const slider2 = document.getElementById('glide_2');
@@ -23,7 +21,7 @@ if(slider1){
 /********LATESTE PRODUCTS******/
 
 if (slider2) {
-    new Glide('#glide_2', {
+    new Glide("#glide_2", {
         type:"carousel",
         startAt: 0,
         hoverpause: true,
