@@ -6,7 +6,7 @@ const slider2 = document.getElementById("glide_2");
 /********HERO******/
 
 if(slider1){
-    new Glide(slider1,{
+    new Glide(slider1, {
         type:"carousel",
         startAt: 0,
         //autoplay:3000,
