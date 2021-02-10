@@ -1,11 +1,11 @@
 /********GLIDE JS CAROUSEL******/
 
-const slider1 = document.getElementById('glide_1');
-const slider2 = document.getElementById('glide_2');
+const slider1 = document.getElementById("glide_1");
+const slider2 = document.getElementById("glide_2");
 
 /********HERO******/
 
-if(slider1){
+if(slider1) {
     new Glide(slider1, {
         type:"carousel",
         startAt: 0,
