@@ -184,16 +184,33 @@ const  products = [
     ];
 
 
-const categoryCenter = document.querySelector(".category__center");
-const filterBtns = document.querySelectorAll('.filter-btn');
+const categoryCenter = document.querySelector(".category__center");                    
+const containerBtn = document.querySelector(".tabs");
 
 
 //load items
 window.addEventListener('DOMContentLoaded' ,function(){
   displayProductsItems(products)
-});
 
-//filter item
+  const categories = products.reduce(function(values,item){
+ 
+  if(!values.includes(item.category)){
+    values.push(item.category);
+  }
+return values
+  },['All'])
+ const categoryBtns = categories.map(function(category){
+   return `<div class="section__titles">
+            <div class="section__title filter-btn " data-id=${category}>
+                <span class="dot"></span>
+                <h3 class="primary__title">${category} Products</h3>
+            </div>
+        </div>`
+ }).join("");
+   containerBtn.innerHTML = categoryBtns;
+  const filterBtns = containerBtn.querySelectorAll('.filter-btn');
+   
+  //filter item
 filterBtns.forEach(function(btn){
     btn.addEventListener("click", function(e) {
         const category = e.currentTarget.dataset.id;
@@ -209,6 +226,10 @@ filterBtns.forEach(function(btn){
         }
     })
 })
+
+});
+
+
 
 
 
