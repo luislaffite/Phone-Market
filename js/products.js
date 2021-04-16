@@ -190,43 +190,8 @@ const containerBtn = document.querySelector(".tabs");
 
 //load items
 window.addEventListener('DOMContentLoaded' ,function(){
-  displayProductsItems(products)
-
-  const categories = products.reduce(function(values,item){
- 
-  if(!values.includes(item.category)){
-    values.push(item.category);
-  }
-return values
-  },['All'])
- const categoryBtns = categories.map(function(category){
-   return `<div class="section__titles">
-            <div class="section__title filter-btn " data-id=${category}>
-                <span class="dot"></span>
-                <h3 class="primary__title">${category} Products</h3>
-            </div>
-        </div>`
- }).join("");
-   containerBtn.innerHTML = categoryBtns;
-  const filterBtns = containerBtn.querySelectorAll('.filter-btn');
-   
-  //filter item
-filterBtns.forEach(function(btn){
-    btn.addEventListener("click", function(e) {
-        const category = e.currentTarget.dataset.id;
-        const productCategory = products.filter(function (productItem){
-            if(productItem.category === category){
-                return productItem;
-            }          
-        });
-        if(category === "All"){
-            displayProductsItems(products);
-        }else{
-            displayProductsItems(productCategory)
-        }
-    })
-})
-
+  displayProductsItems(products);
+  displayProductsButtons();
 });
 
 
@@ -294,6 +259,43 @@ function displayProductsItems(productsItems){
         // console.log(displayProducts)
 }
 
+
+function  displayProductsButtons(){
+   const categories = products.reduce(function(values,item){
+ 
+  if(!values.includes(item.category)){
+    values.push(item.category);
+  }
+return values
+  },['All'])
+ const categoryBtns = categories.map(function(category){
+   return `<div class="section__titles">
+            <div class="section__title filter-btn " data-id=${category}>
+                <span class="dot"></span>
+                <h3 class="primary__title">${category} Products</h3>
+            </div>
+        </div>`
+ }).join("");
+   containerBtn.innerHTML = categoryBtns;
+  const filterBtns = containerBtn.querySelectorAll('.filter-btn');
+   
+  //filter item
+filterBtns.forEach(function(btn){
+    btn.addEventListener("click", function(e) {
+        const category = e.currentTarget.dataset.id;
+        const productCategory = products.filter(function (productItem){
+            if(productItem.category === category){
+                return productItem;
+            }          
+        });
+        if(category === "All"){
+            displayProductsItems(products);
+        }else{
+            displayProductsItems(productCategory)
+        }
+    })
+})
+} 
 
 
 
